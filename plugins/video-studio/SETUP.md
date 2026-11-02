@@ -66,7 +66,7 @@ Distinguish failures:
 - Connected but tools absent: inspect tool discovery and the actual error. Refresh or start a new chat only after a connection or package change. Do not prescribe repeated restarts.
 - Network failure: report the inaccessible host separately from authentication.
 
-If a new chat is unavoidable, give one short continuation prompt with the verified setup state and remaining check. Do not rerun unchanged successful local checks merely because the chat changed. Tokens expire and can be revoked from Studio; never describe installation alone as a successful account connection.
+If a new chat is unavoidable, give one short continuation prompt with the verified setup state and remaining check. Do not rerun unchanged successful local checks merely because the chat changed. Successful authenticated use automatically renews the connection to a rolling 90-day expiry, with renewal written at most once daily. The agent keeps the same secret. An unused connection expires, and you can revoke it from Studio; never describe installation alone as a successful account connection.
 
 ## 3. Check local rendering
 
