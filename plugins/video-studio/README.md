@@ -14,16 +14,14 @@ The client downloads the skills and runner from this repository, so no ZIP trans
 
 ### Updating an installation with missing Studio tools
 
-Version 0.1.1 uses the registered Studio app for authentication. A successful local rendering check does not establish that the account connection works.
+Version 0.1.3 supports a personal-token MCP connection. Copy setup instructions from the signed-in Studio **Connect your agent** popover and let your agent follow the [setup guide](SETUP.md). The token belongs to your account and must remain private. Existing working managed-app connections remain supported; the app dependency is optional.
 
 ```powershell
 codex plugin marketplace upgrade video-studio-team
 codex plugin add video-studio@video-studio-team
 ```
 
-Verify the installed version is 0.1.1 or newer, then use **Connect** for the required Video Studio app in plugin settings. Open a new chat after updating/connecting and run `$video-studio-setup`. If the app is unavailable or Connect fails, report the exact stage and sanitized error. Do not send access tokens, callback URLs, authorization codes, or passwords. Repeated restarts cannot supply a missing connection or OAuth client.
-
-The registered app must be available to the signed-in account, and Studio permissions still apply. Availability on another person's account must be verified there.
+Verify the installed version matches the current release. A successful local rendering check does not establish an authenticated Studio connection. The agent must verify read-only Studio tools. Do not send access tokens, callback URLs, authorization codes, or passwords in diagnostic reports.
 
 A normal installation uses the client's installed plugin copy. It does not need symlinks, Developer Mode, administrator access for skill links, or a checkout of the application source.
 
@@ -66,7 +64,7 @@ Original recordings, reference clips, fonts, and project assets are fetched from
 
 ## Credentials and local files
 
-Sign in through the Studio MCP connection. Production transfer sessions are limited to the selected video and expire. Store a session response only in a private local file and keep it out of snapshots, source control, and chat. Never distribute service credentials.
+Authenticate through your personal-token MCP connection or an existing managed Studio app connection. Production transfer sessions are limited to the selected video and expire. Store a session response only in a private local file and keep it out of snapshots, source control, and chat. Never distribute service credentials.
 
 The local runner supports direct session transfers where the hosting environment accepts them. If the host requires its outer authenticated MCP connection, the assistant uses that connection to prepare a local manifest and fetch assets, then uploads the runner's delivery plan through the same connection. See [runner instructions](packages/local-runner/README.md) for supported commands and transfer details.
 

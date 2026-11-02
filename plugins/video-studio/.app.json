@@ -2,7 +2,7 @@
   "apps": {
     "video-studio": {
       "id": "asdk_app_sites_03c2b9dacff08191a0b97ef47224b301",
-      "required": true
+      "required": false
     }
   }
 }

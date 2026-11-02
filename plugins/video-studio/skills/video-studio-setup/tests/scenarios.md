@@ -20,9 +20,15 @@ These scenarios assess the workflow instructions, not a live second-machine cert
    - Verify `py -3 --version` is 3.9 or newer and invoke the quoted runner path with `py -3`. Do not assume a missing `python3` command means Python is unavailable.
 9. Windows copied install: The editor has no symlink privileges and FFmpeg was just added to PATH.
    - Use the normal copied plugin. Restart the editing client so it receives PATH, then verify both FFmpeg and FFprobe and run the synthetic check. Do not enable Developer Mode or request administrator privileges for ordinary skill installation.
-10. Skills-only success: Local doctor and synthetic render pass, but no Studio tools appear after a restart.
-    - Do not rerun the render as an account test. Inspect the installed version and required app mapping, classify connection state using available evidence, update 0.1.0 to 0.1.1 or newer, and complete the registered app connection if available. Do not keep prescribing restarts or invent OAuth client IDs.
-11. Registered app unavailable: The package contains the correct app mapping, but the person's account cannot access that app.
-    - Report the unavailable dependency and sanitized error for the owner to resolve. Do not claim the public source grants account access, request a service credential, or weaken Studio authentication.
+10. Skills-only success: Local doctor and synthetic render pass, but no Studio tools appear.
+    - Verify the personal-token server URL, environment-variable configuration, and that the agent process inherited the secret. Do not rerun rendering as an authentication test or repeat restarts without a configuration change.
+11. Registered app unavailable: The optional app is unavailable to this account.
+    - Preserve other working connections and follow the personal-token setup. Do not invent OAuth client IDs or request service credentials.
 12. Setup-only permission boundary: Account discovery succeeds and the synthetic test passes.
     - Report verified access and local readiness without preparing, downloading, editing, uploading, or publishing a real video. A named project request is needed before the project workflow.
+13. Windows environment: The token exists in a terminal but the already running desktop client lacks it.
+    - Store it privately for that user using the supported client/platform mechanism, relaunch the agent once to inherit the new environment, and verify actual read-only tool calls. Never echo the token.
+14. Revoked connection: The personal-token endpoint returns HTTP 401.
+    - Ask for fresh copied instructions from the signed-in Studio popover. Do not attempt OAuth login or infer that local FFmpeg failed.
+15. Account denied: The token endpoint returns HTTP 403.
+    - Report an account permission failure for owner review. Do not replace the token repeatedly or weaken role checks.

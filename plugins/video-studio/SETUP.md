@@ -24,25 +24,49 @@ Install or update the plugin using the client's supported plugin controls or CLI
 codex plugin add video-studio@video-studio-team
 ```
 
-Verify the installed package version matches the current published version. A refreshed catalog is not proof that the installed copy updated. The package includes `plugin.json`, `.codex-plugin/plugin.json`, `.app.json`, skills, and a local runner. Its required registered Video Studio app provides authenticated MCP tools. Do not add a second standalone OAuth server from the raw MCP URL.
-
-For another agent, check whether it can load these skills and authorize the registered app before configuring anything. If it cannot, report that precise compatibility limit. Do not claim the raw MCP URL alone is a working connection.
+Verify the installed package version matches the current published version. A refreshed catalog is not proof that the installed copy updated. The package includes skills and a local runner. Its registered Video Studio app is optional: preserve an existing working app connection, but colleagues can use a personal-token MCP connection instead.
 
 ## 2. Connect the user's account
 
-Open the required Video Studio app's normal **Connect** flow using the person's own authorized account. Website sign-in and agent authorization are separate. If user action is necessary, open the relevant screen when supported and ask for the single sign-in or consent action. Never ask for credentials in chat or copy credentials from another account or browser.
+### Personal-token connection
 
-Discover the app's tools, including lazy-loaded tools where supported. Verify access with actual read-only `list_organizations` and `list_videos` calls. Confirm editing tools such as `prepare_edit` are available without calling them on a real video during setup.
+Use the signed-in website's **Connect your agent** popover. It creates this person's token and includes it in the copied instructions. The public guide and plugin never contain a token. If none was supplied and no working connection exists, ask the user to copy fresh instructions from their own Studio account. Do not request their password or reuse another person's credentials.
 
-If blocked, distinguish:
+Configure a Streamable HTTP MCP server at:
 
-- Missing required app: verify the installed package mapping and version.
-- App unavailable to this account: report the exact app availability error for the Studio owner to resolve.
-- Sign-in required or HTTP 401: complete normal authorization.
-- Access denied or HTTP 403: report the account access error; do not alter permissions or weaken authentication.
-- Connected but tools absent: inspect the client's tool inventory and actual error. Refresh or start a new chat only after a connection or package change. Do not prescribe repeated restarts.
+```text
+https://video-studio-agent.life-efficient.chatgpt.site/agent
+```
 
-If a new chat is unavoidable, give the user one short continuation prompt with the verified setup state and the remaining check. Do not rerun successful unchanged local checks merely because the chat changed. Keep callback URLs, authorization codes, tokens, and credentials out of reports.
+For Codex, merge this entry into its existing user configuration, preserving unrelated entries:
+
+```toml
+[mcp_servers.video_studio]
+url = "https://video-studio-agent.life-efficient.chatgpt.site/agent"
+bearer_token_env_var = "VIDEO_STUDIO_ACCESS_TOKEN"
+```
+
+Store the supplied secret as the user's private `VIDEO_STUDIO_ACCESS_TOKEN` environment variable using the platform's supported secure mechanism, and ensure the Codex process inherits it. On Windows, a user-scoped environment setting affects newly launched processes; a terminal's temporary variable does not update an already running desktop client. Do not put the literal token in TOML, shell arguments/history, reports, screenshots, source control, or project snapshots. User environment variables are credentials, not encrypted storage. Prefer an existing credential store or client secret integration where supported. Redact the copied secret from all diagnostic output.
+
+This endpoint uses bearer authentication. Do not run `codex mcp login`, start an OAuth flow, or reuse the original website `/mcp` URL for this token. If changing an existing failed entry, preserve other working servers and avoid duplicate names. For another agent, use its supported HTTP MCP bearer-header configuration with equivalent private secret storage.
+
+### Existing managed app connection
+
+If the registered Video Studio app is already available and connected, it remains supported. Use the person's own normal Connect flow when needed. Website sign-in alone does not authorize the agent. An unavailable optional app does not prevent the personal-token route.
+
+### Verify the connection
+
+Discover tools, including lazy-loaded tools where supported. Run actual read-only `list_organizations` and `list_videos` calls. Confirm editing tools such as `prepare_edit` are available without calling them on a real video during setup.
+
+Distinguish failures:
+
+- Missing environment variable: configure the user's secret and ensure the agent process receives it.
+- HTTP 401: the token is missing, expired, invalid, or revoked. Generate fresh instructions in Studio.
+- HTTP 403: the account lacks Studio permission. Report the access error for the owner to review.
+- Connected but tools absent: inspect tool discovery and the actual error. Refresh or start a new chat only after a connection or package change. Do not prescribe repeated restarts.
+- Network failure: report the inaccessible host separately from authentication.
+
+If a new chat is unavoidable, give one short continuation prompt with the verified setup state and remaining check. Do not rerun unchanged successful local checks merely because the chat changed. Tokens expire and can be revoked from Studio; never describe installation alone as a successful account connection.
 
 ## 3. Check local rendering
 
