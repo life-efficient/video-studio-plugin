@@ -1,6 +1,6 @@
 {
   "name": "video-studio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Plan, edit, revise, and review videos with portable local production workspaces.",
   "skills": "./skills/",
   "apps": "./.app.json",

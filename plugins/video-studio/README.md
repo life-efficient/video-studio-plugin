@@ -4,6 +4,8 @@ Edit videos locally and return versioned exports and editable projects to shared
 
 ## Install
 
+For agent-led installation, follow the maintained [setup guide](SETUP.md). The same guide is published at `https://github.com/life-efficient/video-studio-plugin/blob/main/SETUP.md`.
+
 Add the public marketplace with `codex plugin marketplace add life-efficient/video-studio-plugin`. Refresh or restart the desktop client, select the **Video Studio** plugin source, install **Video Studio**, and connect your own Studio account. Run `$video-studio-setup` in a new chat.
 
 The client downloads the skills and runner from this repository, so no ZIP transfer is needed. Account permissions determine which videos you can edit. See [the marketplace guide](https://github.com/life-efficient/video-studio-plugin#readme) for installation and updates.

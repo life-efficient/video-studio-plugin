@@ -4,6 +4,8 @@ Skills and a local editing runner for Video Studio, distributed through a Git-ba
 
 ## Install
 
+For agent-led setup, copy the prompt from the Studio web app or ask your agent to follow [SETUP.md](SETUP.md). It manages installation, updates, connection checks, and local rendering checks. You may need to approve sign-in.
+
 Add this marketplace in Codex:
 
 ```sh

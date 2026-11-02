@@ -1,13 +1,14 @@
 {
   "name": "video-studio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "files": {
     ".app.json": "029f1ece04cede64a72c7ccf9db718111bd8dfa4c5cc02fb27d0c139c834dca2",
-    ".codex-plugin/plugin.json": "3f6b7190d35c54e8004af9770141609620cd66b7f698da292a91b0eca2414a03",
-    "README.md": "2655cac20430f9ceb63d9392c2f3feef7ba5b251f479af63eca7df8f1a560918",
+    ".codex-plugin/plugin.json": "20b5350ccd1b1ccbffa21c7941a367788b53df87cbb8bfd9a85d123f94df7048",
+    "README.md": "b27f938197dbae762f1d6ee810c351a05a746e8f0f71c330177852ad9493715f",
+    "SETUP.md": "90c5533decdd64a4bf73180c71350e5223a5306b26034d2faa25e51a1a4330ba",
     "packages/local-runner/README.md": "a894ea80de81c868bab96457ba5a5c15a9ae9b5a46776afea6187564cad0b4af",
     "packages/local-runner/video_studio.py": "0312a86f3bd6378e39c92143f8f5313b6eac835e928063f0e4edf4c8ee936cab",
-    "plugin.json": "baf02a75fc122017ad5df5107913b902d932391bcc17272e0cf0f58349325416",
+    "plugin.json": "794b6ba06c804f3e8573e86ca134d431a5a7c4f821d587d8dbde7eff9f69b6e7",
     "skills/edit-video/SKILL.md": "ecca3c5e86af059a7cd4707e2329b96a096eb2ae4ad8f947ae345137310b6765",
     "skills/edit-video/agents/openai.yaml": "c6dff04ea58ba007d791faff2f9a3d10c90c82b94d596d0b5df1e071c029f61c",
     "skills/edit-video/references/local-studio-handoff.md": "f0b5de4fdc93044b0c5a90499bd4f6e49aaf6257146444259b50f518a71cd7ac",
@@ -18,7 +19,7 @@
     "skills/face-camera-recording-script/scripts/add_scroll_padding.py": "bcecc902a4ede7138d25c9cc4fdb3df4a1998cabd42334a81939b12118e4005a",
     "skills/iterate-video-edit/SKILL.md": "3a6c094a9c5775f185ca5931735d30c83218c230060200731ad40e49308fbb59",
     "skills/iterate-video-edit/agents/openai.yaml": "46d2142a262a001fe4099dfe9f2dff46f603d555d1e11bb5f5cc7d05c3032a44",
-    "skills/video-studio-setup/SKILL.md": "634ad886be6311ae9719783152954d1de442aa7a27e62c1b38fcdd0486f17399",
+    "skills/video-studio-setup/SKILL.md": "939b683bcf034e22290d7298ded0ca757f35145b3cf84f97faedd69f5379e692",
     "skills/video-studio-setup/agents/openai.yaml": "4577f5c87b968bdee9d565fd9911f7716efa84611bf22573497b17c8e4cd0154",
     "skills/video-studio-setup/tests/scenarios.md": "96a12bb07bc984d6f4dfd9ed9c4b52449b655ed9e111c0cb15a75b637517aca9"
   }

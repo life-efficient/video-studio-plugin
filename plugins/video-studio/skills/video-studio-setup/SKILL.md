@@ -7,6 +7,8 @@ description: Set up or diagnose the Video Studio plugin on this computer, connec
 
 Connect Video Studio and verify a portable local editing workspace.
 
+Use the bundled [setup guide](../../SETUP.md) for the installation and connection sequence. When online, reconcile it with the current public guide at `https://github.com/life-efficient/video-studio-plugin/blob/main/SETUP.md` so an old installed skill does not repeat superseded setup advice. Inspect the latest published package version before prescribing a version-specific repair.
+
 ## Contract Checklist
 
 - Resolve the installed plugin root from this skill, never from a personal absolute path.
