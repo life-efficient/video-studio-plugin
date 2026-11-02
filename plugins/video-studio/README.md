@@ -14,7 +14,7 @@ The client downloads the skills and runner from this repository, so no ZIP trans
 
 ### Updating an installation with missing Studio tools
 
-Version 0.1.4 includes a local connection helper. Copy setup instructions from Studio and let your agent follow the [setup guide](SETUP.md). The helper opens browser approval, stores the credential in your OS credential store, and connects without copying tokens or configuring environment variables. Existing working connections remain supported; the managed app is optional.
+Version 0.1.5 includes a local connection helper. Copy setup instructions from Studio and let your agent follow the [setup guide](SETUP.md). The helper opens browser approval, stores the credential in your OS credential store, and connects without copying tokens or configuring environment variables. Existing working connections remain supported; the managed app is optional.
 
 ```powershell
 codex plugin marketplace upgrade video-studio-team
@@ -69,3 +69,7 @@ Connect through the [local helper](local-agent/README.md) and browser approval, 
 The local runner supports direct session transfers where the hosting environment accepts them. If the host requires its outer authenticated MCP connection, the assistant uses that connection to prepare a local manifest and fetch assets, then uploads the runner's delivery plan through the same connection. See [runner instructions](packages/local-runner/README.md) for supported commands and transfer details.
 
 Rendering occurs on the editor's computer. This release does not provide cloud rendering or automatically install project-specific rendering frameworks. Verify the actual first project after the synthetic setup check.
+
+## Script outlines
+
+Studio keeps spoken scripts continuous and stores story beats separately. Read the current script and passage feedback with `read_script`, then use `update_script_beats` with its current revision to update the outline. Beat titles never enter spoken or teleprompter text. Exact unique passage anchors follow the text when possible; missing or ambiguous anchors require review.

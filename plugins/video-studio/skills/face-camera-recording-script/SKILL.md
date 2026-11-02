@@ -1,6 +1,6 @@
 ---
 name: face-camera-recording-script
-description: Use when the user wants a short spoken video script for a recording or generated presenter, including optional teleprompter scroll padding.
+description: Use when the user wants a spoken video script for a recording or generated presenter, including optional teleprompter scroll padding and a separate Video Studio story-beat outline. Do not use for rendering or editing footage.
 ---
 
 # Face-Camera Recording Script
@@ -18,6 +18,7 @@ Create clean spoken copy for a recorded or generated presenter video.
 - Keep visual planning out of the script by default. Do not add bracketed
   motion-graphic, transition, caption, crop, or visual cues, and do not add an
   `Edit Notes` section unless the user explicitly requests them.
+- In Video Studio, keep chapter titles in `scriptBeats` metadata, never in the spoken script or teleprompter copy.
 - Keep paragraphs short so the copy is easy to perform and can be passed
   cleanly to a generated-video service.
 - Add visible scroll padding only when the user needs a manual teleprompter
@@ -44,7 +45,11 @@ Create clean spoken copy for a recorded or generated presenter video.
    - use a short human-readable title followed directly by the spoken script
    - omit frontmatter and metadata fields
    - keep the file under the current task's `outputs/` directory when available
-   - Anti-patterns: adding source or format headers, adding edit notes by default, saving only in chat
+   - when working on a Studio video, read `read_script` for its current text, revision, outline, and passage feedback before revising; treat unresolved comments as editorial requests, not automatic permission to expand unrelated scope
+   - for a longer script or when an outline is requested, create or revise a concise sequence of story beats using `update_script_beats` with the current `expectedRevision`; each beat has a stable `id`, short `title`, and `startQuote` matching one exact unique passage in script order
+   - after changing spoken text through the existing script update route, read the saved script again before updating anchors; verify `read_script` returns a resolved outline and unchanged spoken text after a beat-only update
+   - if a revision conflicts, reread and reconcile instead of overwriting another person's work; if an anchor is missing or ambiguous, repair it against the current text rather than inventing a position
+   - Anti-patterns: adding source or format headers, adding edit notes by default, saving only in chat, inserting chapter headings into spoken text, discarding feedback or rewriting unrelated sections to change an outline
 4. Add teleprompter padding only for manual recording:
    - resolve `<SKILL_ROOT>` to this installed skill directory and use the verified Python interpreter (`py -3` or `python` on Windows, usually `python3` elsewhere). Quote paths containing spaces and use the bundled helper:
    ```bash
@@ -60,6 +65,7 @@ Create clean spoken copy for a recorded or generated presenter video.
    - confirm the spoken section contains no bracketed visual cues or default
      edit-notes section
    - confirm no frontmatter or metadata block was added
+   - for Studio outlines, confirm every beat resolves to a unique passage and no title entered spoken or teleprompter text; use [outline scenarios](references/outline-scenarios.md) when validating changes
    - Anti-patterns: checking only that a file was written, leaving production instructions in generated-presenter copy
 6. Hand off the script:
    - link to the markdown file

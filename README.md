@@ -52,3 +52,7 @@ codex plugin add video-studio@video-studio-team
 Verify the installed version matches the current release. Local rendering success does not prove account authorization. The agent must verify actual read-only Studio tools. Do not share credentials in diagnostic reports or repeat restarts without a connection change.
 
 Other agents can use the same helper through their supported stdio MCP configuration. Existing working direct bearer or managed app connections remain supported. The helper handles Studio browser approval without OpenAI OAuth client registration.
+
+## Script outlines in 0.1.5
+
+Version 0.1.5 adds agent guidance for Studio's read-only story-beat outline. Use `read_script` to inspect the current spoken text, revision and passage feedback, then `update_script_beats` to save anchored section titles separately from spoken or teleprompter copy. Studio access and revision checks apply to outline changes. Browser approval and the existing editing runner remain supported.
