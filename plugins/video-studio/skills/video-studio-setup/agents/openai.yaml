@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Studio Setup"
+  short_description: "Connect Studio and verify local editing on this computer"
+  default_prompt: "Use $video-studio-setup to connect my Studio account and verify this computer can prepare and render a portable editing workspace."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Iterate Video Edit"
+  short_description: "Apply edit feedback while preserving everything else"
+  default_prompt: "Use $iterate-video-edit to revise the latest iteration of the oldest video ready for editing, first copying its preserved editable snapshot into a new version folder, then changing only what its review feedback requests."

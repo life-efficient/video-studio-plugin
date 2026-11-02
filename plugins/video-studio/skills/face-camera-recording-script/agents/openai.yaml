@@ -1,0 +1,4 @@
+interface:
+  display_name: "Face-Camera Recording Script"
+  short_description: "Create clean spoken scripts for recorded or generated presenter videos."
+  default_prompt: "Use $face-camera-recording-script to draft clean spoken copy without metadata or visual cues, adding teleprompter scroll padding only for manual recording."

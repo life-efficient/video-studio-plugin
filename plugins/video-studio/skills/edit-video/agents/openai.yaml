@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit Video"
+  short_description: "Edit with reference-grounded visuals and silent review"
+  default_prompt: "Use $edit-video to complete this video using the supplied brief and references. Inspect reference contact sheets, internally compare a rendered direction sample, then finish and review the full edit silently. Record each delivered iteration’s changes, reasons, and actual source takes/clips in Video Studio. Stop at a sample only if I explicitly request sample-only work or a pause for feedback."

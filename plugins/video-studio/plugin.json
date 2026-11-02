@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "video-studio",
+  "version": "0.1.0",
+  "description": "Plan, edit, revise, and review videos with portable local production workspaces.",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/video-studio-setup/SKILL.md",
+      "interface": {
+        "displayName": "Video Studio",
+        "shortDescription": "Edit and revise videos with local rendering and shared review.",
+        "category": "Productivity"
+      }
+    }
+  }
+}

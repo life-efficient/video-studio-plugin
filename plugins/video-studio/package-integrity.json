@@ -1,0 +1,24 @@
+{
+  "name": "video-studio",
+  "version": "0.1.0",
+  "files": {
+    "README.md": "2ff1e912f0aadb56e36d6fcfb36501c301588b9a7e2e7026660a43038a5d0c8f",
+    "mcp.json": "756d70e233ac5158502dcd242220dbeb5ee3cb3903048f114eb5ea4d3559c33a",
+    "packages/local-runner/README.md": "e72583b3b7feba08414db0414a9f54848ede202c1d306cf99806b8d9b74e789e",
+    "packages/local-runner/video_studio.py": "0312a86f3bd6378e39c92143f8f5313b6eac835e928063f0e4edf4c8ee936cab",
+    "plugin.json": "5869ebd7cef7d212b9407593bcb8d847a8b7e834080398693c8df9b32a649338",
+    "skills/edit-video/SKILL.md": "ecca3c5e86af059a7cd4707e2329b96a096eb2ae4ad8f947ae345137310b6765",
+    "skills/edit-video/agents/openai.yaml": "c6dff04ea58ba007d791faff2f9a3d10c90c82b94d596d0b5df1e071c029f61c",
+    "skills/edit-video/references/local-studio-handoff.md": "f0b5de4fdc93044b0c5a90499bd4f6e49aaf6257146444259b50f518a71cd7ac",
+    "skills/edit-video/references/studio-handoff.md": "4316831e843d083538c1428c35c6415d147a7c3922b3c90c1d623da2418956ee",
+    "skills/edit-video/tests/scenarios.md": "336b7e4bd4e26b06384f6cfbd1b561ff65c72f07cb47449f9e3c51c62cc84ed2",
+    "skills/face-camera-recording-script/SKILL.md": "a542cbc43c84bceeafa6f64fe5406999b230373ecc87657b0f35e8c5dfa4d403",
+    "skills/face-camera-recording-script/agents/openai.yaml": "d8374dab752fba9033ed39941669922e1310e5680cea4f4c3ac22eaaaa047d2d",
+    "skills/face-camera-recording-script/scripts/add_scroll_padding.py": "bcecc902a4ede7138d25c9cc4fdb3df4a1998cabd42334a81939b12118e4005a",
+    "skills/iterate-video-edit/SKILL.md": "3a6c094a9c5775f185ca5931735d30c83218c230060200731ad40e49308fbb59",
+    "skills/iterate-video-edit/agents/openai.yaml": "46d2142a262a001fe4099dfe9f2dff46f603d555d1e11bb5f5cc7d05c3032a44",
+    "skills/video-studio-setup/SKILL.md": "8eb9abaae433f3dedf656c95baa54cd8c79c0b90c6e3552bfb82d7cc37354ac5",
+    "skills/video-studio-setup/agents/openai.yaml": "4577f5c87b968bdee9d565fd9911f7716efa84611bf22573497b17c8e4cd0154",
+    "skills/video-studio-setup/tests/scenarios.md": "b11cfc34aebd23e8017ca2af05ac45e631e96199fccfd9480754a1cc229bf197"
+  }
+}
