@@ -4,7 +4,7 @@ Skills and a local editing runner for Video Studio, distributed through a Git-ba
 
 ## Install
 
-For agent-led setup, copy the prompt from the Studio web app or ask your agent to follow [SETUP.md](SETUP.md). It manages installation, updates, connection checks, and local rendering checks. The copied instructions include your personal connection token; keep them private.
+For agent-led setup, copy the prompt from the Studio web app or ask your agent to follow [SETUP.md](SETUP.md). It manages installation, updates, connection checks, and local rendering checks. The copied instructions contain no token. The bundled helper opens browser approval and saves your credential in the operating system credential store.
 
 Add this marketplace in Codex:
 
@@ -12,7 +12,7 @@ Add this marketplace in Codex:
 codex plugin marketplace add life-efficient/video-studio-plugin
 ```
 
-Refresh or restart the desktop app, open the Plugins directory, select the **Video Studio** source, and install **Video Studio**. Copy **Connect your agent** instructions from your signed-in Studio account to configure personal-token access, then run `$video-studio-setup`. An existing working managed app connection remains supported.
+Refresh or restart the desktop app, open the Plugins directory, select the **Video Studio** source, and install **Video Studio**. Copy **Connect your agent** instructions from Studio, then run `$video-studio-setup`. The agent starts the local helper so you can sign in and approve the matching code in your browser. An existing working managed app connection remains supported.
 
 If the command is unavailable, ask Codex to add `https://github.com/life-efficient/video-studio-plugin` as a plugin marketplace using its supported local setup. Installing the source alone does not connect your account or grant video access.
 
@@ -38,9 +38,9 @@ The installable plugin is under `plugins/video-studio/`. Its [Windows and runner
 
 Recordings, production projects, credentials, and reference footage are not included. Studio data remains protected by sign-in and project permissions.
 
-## Personal-token connection in 0.1.3
+## Browser approval connection in 0.1.4
 
-Version 0.1.3 supports a separate bearer-authenticated agent endpoint. The registered Studio app is optional. Copy connection instructions from your own signed-in Studio account and follow [SETUP.md](SETUP.md). The public repository contains no tokens and installation alone grants no video access.
+Version 0.1.4 bundles a Python helper that opens browser approval, saves your credential in Windows Credential Manager, macOS Keychain, or a supported Linux desktop store, and exposes a local stdio MCP connection. Follow [SETUP.md](SETUP.md). No token copying or environment-variable setup is required. The registered Studio app remains optional. The public repository contains no credentials and installation alone grants no video access.
 
 Refresh the marketplace and update the installed plugin:
 
@@ -51,4 +51,4 @@ codex plugin add video-studio@video-studio-team
 
 Verify the installed version matches the current release. Local rendering success does not prove account authorization. The agent must verify actual read-only Studio tools. Do not share credentials in diagnostic reports or repeat restarts without a connection change.
 
-Other agents can use the same endpoint with their supported HTTP MCP bearer-token configuration and private secret storage. The personal-token endpoint does not use OAuth login.
+Other agents can use the same helper through their supported stdio MCP configuration. Existing working direct bearer or managed app connections remain supported. The helper handles Studio browser approval without OpenAI OAuth client registration.

@@ -1,14 +1,17 @@
 {
   "name": "video-studio",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "files": {
     ".app.json": "ad58d812596d380bf21977c7ca2a296266e654493253d7e088acdc6c53b38bef",
-    ".codex-plugin/plugin.json": "97e2f66780b5138c8dd4b373991f56a9a043077e777df475466e87b58a6f7284",
-    "README.md": "ca232f35e025c8b145622f514dda1c97163de969b5d12b8bc6ced7cdce451a01",
-    "SETUP.md": "e4bc33aba1571d60befa661827e87e8cc3f93b3865a945e543d4763d5f0376e2",
+    ".codex-plugin/plugin.json": "ff6e725441822d95015042fddff12f5bedc14c2f3b262a3a47947341a1d10112",
+    "README.md": "03f4cbefa697d6ad5336ccb7e4023d6189f4317b602ab94aac41194f32344b2f",
+    "SETUP.md": "7df01eedf5044dfb6d5f4121e1299d6489a48fc8ab42340f7b2f5f2faa2e90a4",
+    "local-agent/README.md": "1745da40059c68c8082f5f993f93119ce2eb60eef4d821be5bf39511d836c352",
+    "local-agent/helper.py": "b7f0dd64a16d97bfa2f58b013926cac5e4de363838b29ef9c2e7f6e43ca2059f",
+    "local-agent/requirements.txt": "208c8a8417756e68f8ef31ed67943caecf159f2c701855d9c5f25485992fa686",
     "packages/local-runner/README.md": "a894ea80de81c868bab96457ba5a5c15a9ae9b5a46776afea6187564cad0b4af",
     "packages/local-runner/video_studio.py": "0312a86f3bd6378e39c92143f8f5313b6eac835e928063f0e4edf4c8ee936cab",
-    "plugin.json": "98ee29580b5cf7b592056b08e5269f63e9df330a2a12ee2408122fb4d030d750",
+    "plugin.json": "261ed0a33c2318bbcb6af0b5e20328ecc3f87519c9713cdadc2a697e3e20c45e",
     "skills/edit-video/SKILL.md": "ecca3c5e86af059a7cd4707e2329b96a096eb2ae4ad8f947ae345137310b6765",
     "skills/edit-video/agents/openai.yaml": "c6dff04ea58ba007d791faff2f9a3d10c90c82b94d596d0b5df1e071c029f61c",
     "skills/edit-video/references/local-studio-handoff.md": "f0b5de4fdc93044b0c5a90499bd4f6e49aaf6257146444259b50f518a71cd7ac",
@@ -19,8 +22,8 @@
     "skills/face-camera-recording-script/scripts/add_scroll_padding.py": "bcecc902a4ede7138d25c9cc4fdb3df4a1998cabd42334a81939b12118e4005a",
     "skills/iterate-video-edit/SKILL.md": "3a6c094a9c5775f185ca5931735d30c83218c230060200731ad40e49308fbb59",
     "skills/iterate-video-edit/agents/openai.yaml": "46d2142a262a001fe4099dfe9f2dff46f603d555d1e11bb5f5cc7d05c3032a44",
-    "skills/video-studio-setup/SKILL.md": "b88c937f85a9e138cdb14fc5ec255f90b5261fbb59ea512815296224bd0ae7c3",
-    "skills/video-studio-setup/agents/openai.yaml": "4577f5c87b968bdee9d565fd9911f7716efa84611bf22573497b17c8e4cd0154",
-    "skills/video-studio-setup/tests/scenarios.md": "72827144a595f78afb545a23fb776c483470ce7d43fddb2a130e7e90607e15c6"
+    "skills/video-studio-setup/SKILL.md": "6eaa0dc6c596691792ba771a620f412b9f405d7c0c4b975a9326056f43bdc9f8",
+    "skills/video-studio-setup/agents/openai.yaml": "dc34085699f98bcf2ea44156aa3ab9a82e50eaa1fc10204ad50fcb29bbb5e487",
+    "skills/video-studio-setup/tests/scenarios.md": "3e661955d3948748bc36cff19e09060927784aad65e05d2820c9970dced99d95"
   }
 }

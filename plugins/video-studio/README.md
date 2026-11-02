@@ -14,7 +14,7 @@ The client downloads the skills and runner from this repository, so no ZIP trans
 
 ### Updating an installation with missing Studio tools
 
-Version 0.1.3 supports a personal-token MCP connection. Copy setup instructions from the signed-in Studio **Connect your agent** popover and let your agent follow the [setup guide](SETUP.md). The token belongs to your account and must remain private. Existing working managed-app connections remain supported; the app dependency is optional.
+Version 0.1.4 includes a local connection helper. Copy setup instructions from Studio and let your agent follow the [setup guide](SETUP.md). The helper opens browser approval, stores the credential in your OS credential store, and connects without copying tokens or configuring environment variables. Existing working connections remain supported; the managed app is optional.
 
 ```powershell
 codex plugin marketplace upgrade video-studio-team
@@ -64,7 +64,7 @@ Original recordings, reference clips, fonts, and project assets are fetched from
 
 ## Credentials and local files
 
-Authenticate through your personal-token MCP connection or an existing managed Studio app connection. Production transfer sessions are limited to the selected video and expire. Store a session response only in a private local file and keep it out of snapshots, source control, and chat. Never distribute service credentials.
+Connect through the [local helper](local-agent/README.md) and browser approval, or preserve an existing working connection. The helper keeps your personal credential in the OS credential store. Production transfer sessions are limited to the selected video and expire. Store a session response only in a private local file and keep it out of snapshots, source control, and chat. Never distribute service credentials.
 
 The local runner supports direct session transfers where the hosting environment accepts them. If the host requires its outer authenticated MCP connection, the assistant uses that connection to prepare a local manifest and fetch assets, then uploads the runner's delivery plan through the same connection. See [runner instructions](packages/local-runner/README.md) for supported commands and transfer details.
 
