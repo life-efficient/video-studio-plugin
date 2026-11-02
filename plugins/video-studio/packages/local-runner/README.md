@@ -103,8 +103,13 @@ Direct delivery performs the upload loop programmatically and validates the retu
 
 ## Verification
 
+Verify an installed package with the runner's actual dependency and rendering checks:
+
 ```sh
-python3 -m unittest discover -s /path/to/video-studio/packages/local-runner -p 'test_*.py' -v
+python3 /path/to/video_studio.py doctor
+python3 /path/to/video_studio.py smoke --workspace /path/to/new-empty-smoke-workspace
 ```
 
-Tests cover portable Windows path validation and case collisions, an 8 MiB multipart boundary, a second-machine baseline import and revision, a synthetic render, verified snapshot restore, rejected traversal and secrets, preserved-parent drift, connector-staged downloads, upload chunk integrity, and a local JSON-RPC fixture. They do not demonstrate access from a second physical machine or a hosted production upload.
+On Windows, use the verified `py -3` or `python` interpreter. Inspect the reported checks and generated frame without playing media. These checks do not certify a real project, a second physical computer, or a hosted production upload. Complete an authorized edit and feedback-led revision on the editor's computer before considering that installation ready.
+
+Automated unit tests belong to the application development checkout and are not included in an installed plugin. Do not run test discovery against the installed package or treat zero discovered tests as verification.

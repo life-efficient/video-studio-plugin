@@ -2,9 +2,9 @@
   "name": "video-studio",
   "version": "0.1.0",
   "files": {
-    "README.md": "2ff1e912f0aadb56e36d6fcfb36501c301588b9a7e2e7026660a43038a5d0c8f",
+    "README.md": "99a95078870f65205c9b43009d43146def9c3f56b1b239a33ada0f1afaabb4c0",
     "mcp.json": "756d70e233ac5158502dcd242220dbeb5ee3cb3903048f114eb5ea4d3559c33a",
-    "packages/local-runner/README.md": "e72583b3b7feba08414db0414a9f54848ede202c1d306cf99806b8d9b74e789e",
+    "packages/local-runner/README.md": "a894ea80de81c868bab96457ba5a5c15a9ae9b5a46776afea6187564cad0b4af",
     "packages/local-runner/video_studio.py": "0312a86f3bd6378e39c92143f8f5313b6eac835e928063f0e4edf4c8ee936cab",
     "plugin.json": "5869ebd7cef7d212b9407593bcb8d847a8b7e834080398693c8df9b32a649338",
     "skills/edit-video/SKILL.md": "ecca3c5e86af059a7cd4707e2329b96a096eb2ae4ad8f947ae345137310b6765",
@@ -17,7 +17,7 @@
     "skills/face-camera-recording-script/scripts/add_scroll_padding.py": "bcecc902a4ede7138d25c9cc4fdb3df4a1998cabd42334a81939b12118e4005a",
     "skills/iterate-video-edit/SKILL.md": "3a6c094a9c5775f185ca5931735d30c83218c230060200731ad40e49308fbb59",
     "skills/iterate-video-edit/agents/openai.yaml": "46d2142a262a001fe4099dfe9f2dff46f603d555d1e11bb5f5cc7d05c3032a44",
-    "skills/video-studio-setup/SKILL.md": "8eb9abaae433f3dedf656c95baa54cd8c79c0b90c6e3552bfb82d7cc37354ac5",
+    "skills/video-studio-setup/SKILL.md": "69dc450af37fbca82c0dac8835378ffc7a079cda0f05aa3224d19ee9b9d2e53b",
     "skills/video-studio-setup/agents/openai.yaml": "4577f5c87b968bdee9d565fd9911f7716efa84611bf22573497b17c8e4cd0154",
     "skills/video-studio-setup/tests/scenarios.md": "b11cfc34aebd23e8017ca2af05ac45e631e96199fccfd9480754a1cc229bf197"
   }
