@@ -20,3 +20,9 @@ These scenarios assess the workflow instructions, not a live second-machine cert
    - Verify `py -3 --version` is 3.9 or newer and invoke the quoted runner path with `py -3`. Do not assume a missing `python3` command means Python is unavailable.
 9. Windows copied install: The editor has no symlink privileges and FFmpeg was just added to PATH.
    - Use the normal copied plugin. Restart the editing client so it receives PATH, then verify both FFmpeg and FFprobe and run the synthetic check. Do not enable Developer Mode or request administrator privileges for ordinary skill installation.
+10. Skills-only success: Local doctor and synthetic render pass, but no Studio tools appear after a restart.
+    - Do not rerun the render as an account test. Inspect the installed version and required app mapping, classify connection state using available evidence, update 0.1.0 to 0.1.1 or newer, and complete the registered app connection if available. Do not keep prescribing restarts or invent OAuth client IDs.
+11. Registered app unavailable: The package contains the correct app mapping, but the person's account cannot access that app.
+    - Report the unavailable dependency and sanitized error for the owner to resolve. Do not claim the public source grants account access, request a service credential, or weaken Studio authentication.
+12. Setup-only permission boundary: Account discovery succeeds and the synthetic test passes.
+    - Report verified access and local readiness without preparing, downloading, editing, uploading, or publishing a real video. A named project request is needed before the project workflow.

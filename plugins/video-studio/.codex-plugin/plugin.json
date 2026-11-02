@@ -1,0 +1,12 @@
+{
+  "name": "video-studio",
+  "version": "0.1.1",
+  "description": "Plan, edit, revise, and review videos with portable local production workspaces.",
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Video Studio",
+    "shortDescription": "Edit and revise videos with local rendering and shared review.",
+    "category": "Productivity"
+  }
+}

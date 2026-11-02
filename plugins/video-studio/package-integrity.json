@@ -1,12 +1,13 @@
 {
   "name": "video-studio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": {
-    "README.md": "99a95078870f65205c9b43009d43146def9c3f56b1b239a33ada0f1afaabb4c0",
-    "mcp.json": "756d70e233ac5158502dcd242220dbeb5ee3cb3903048f114eb5ea4d3559c33a",
+    ".app.json": "029f1ece04cede64a72c7ccf9db718111bd8dfa4c5cc02fb27d0c139c834dca2",
+    ".codex-plugin/plugin.json": "3f6b7190d35c54e8004af9770141609620cd66b7f698da292a91b0eca2414a03",
+    "README.md": "2655cac20430f9ceb63d9392c2f3feef7ba5b251f479af63eca7df8f1a560918",
     "packages/local-runner/README.md": "a894ea80de81c868bab96457ba5a5c15a9ae9b5a46776afea6187564cad0b4af",
     "packages/local-runner/video_studio.py": "0312a86f3bd6378e39c92143f8f5313b6eac835e928063f0e4edf4c8ee936cab",
-    "plugin.json": "5869ebd7cef7d212b9407593bcb8d847a8b7e834080398693c8df9b32a649338",
+    "plugin.json": "baf02a75fc122017ad5df5107913b902d932391bcc17272e0cf0f58349325416",
     "skills/edit-video/SKILL.md": "ecca3c5e86af059a7cd4707e2329b96a096eb2ae4ad8f947ae345137310b6765",
     "skills/edit-video/agents/openai.yaml": "c6dff04ea58ba007d791faff2f9a3d10c90c82b94d596d0b5df1e071c029f61c",
     "skills/edit-video/references/local-studio-handoff.md": "f0b5de4fdc93044b0c5a90499bd4f6e49aaf6257146444259b50f518a71cd7ac",
@@ -17,8 +18,8 @@
     "skills/face-camera-recording-script/scripts/add_scroll_padding.py": "bcecc902a4ede7138d25c9cc4fdb3df4a1998cabd42334a81939b12118e4005a",
     "skills/iterate-video-edit/SKILL.md": "3a6c094a9c5775f185ca5931735d30c83218c230060200731ad40e49308fbb59",
     "skills/iterate-video-edit/agents/openai.yaml": "46d2142a262a001fe4099dfe9f2dff46f603d555d1e11bb5f5cc7d05c3032a44",
-    "skills/video-studio-setup/SKILL.md": "69dc450af37fbca82c0dac8835378ffc7a079cda0f05aa3224d19ee9b9d2e53b",
+    "skills/video-studio-setup/SKILL.md": "634ad886be6311ae9719783152954d1de442aa7a27e62c1b38fcdd0486f17399",
     "skills/video-studio-setup/agents/openai.yaml": "4577f5c87b968bdee9d565fd9911f7716efa84611bf22573497b17c8e4cd0154",
-    "skills/video-studio-setup/tests/scenarios.md": "b11cfc34aebd23e8017ca2af05ac45e631e96199fccfd9480754a1cc229bf197"
+    "skills/video-studio-setup/tests/scenarios.md": "96a12bb07bc984d6f4dfd9ed9c4b52449b655ed9e111c0cb15a75b637517aca9"
   }
 }

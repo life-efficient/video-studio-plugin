@@ -10,6 +10,19 @@ The client downloads the skills and runner from this repository, so no ZIP trans
 
 ## Windows setup
 
+### Updating an installation with missing Studio tools
+
+Version 0.1.1 uses the registered Studio app for authentication. A successful local rendering check does not establish that the account connection works.
+
+```powershell
+codex plugin marketplace upgrade video-studio-team
+codex plugin add video-studio@video-studio-team
+```
+
+Verify the installed version is 0.1.1 or newer, then use **Connect** for the required Video Studio app in plugin settings. Open a new chat after updating/connecting and run `$video-studio-setup`. If the app is unavailable or Connect fails, report the exact stage and sanitized error. Do not send access tokens, callback URLs, authorization codes, or passwords. Repeated restarts cannot supply a missing connection or OAuth client.
+
+The registered app must be available to the signed-in account, and Studio permissions still apply. Availability on another person's account must be verified there.
+
 A normal installation uses the client's installed plugin copy. It does not need symlinks, Developer Mode, administrator access for skill links, or a checkout of the application source.
 
 1. Install the plugin from the marketplace above. Run `$video-studio-setup` so the assistant locates its installed plugin folder and checks the computer. Keep editing workspaces outside that folder. The manual commands below use `$StudioPlugin` for that installed plugin folder.
